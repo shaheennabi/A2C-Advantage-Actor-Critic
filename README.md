@@ -115,21 +115,11 @@ pytest -q
 
 ---
 
-## Troubleshooting & Tips ⚠️
+## Troubleshooting & Tips 
 
 - Avoid module-level calls to `training_loop` or heavy functions during import — these can create circular import issues.
 - Add `assert returns.shape == values.shape` to catch shape mismatches early.
 - If training seems unstable, try reducing `N_STEPS` or lowering the learning rate.
-
----
-
-## Extending the Project 💡
-
-- Add a configurable `log_interval` parameter to `training_loop`.
-- Add checkpoint saving and resume functionality.
-- Add unit tests under `tests/` and set up CI (GitHub Actions).
-- Add Jupyter notebooks for visualization of training progress.
-
 ---
 
 ## License & Credits 📜
@@ -138,4 +128,3 @@ See the `LICENSE` file for project license details.
 
 ---
 
-If you want, I can add tests or a `log_interval` parameter next — tell me which and I’ll implement it. 
